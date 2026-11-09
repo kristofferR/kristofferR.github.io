@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chatpane</title>
+<meta name="robots" content="noindex">
+<script>
+  // Anything else under /Carrier/ moved to chatpane.app with the same path.
+  var path = location.pathname;
+  if (path === "/Carrier" || path.indexOf("/Carrier/") === 0) {
+    location.replace("https://chatpane.app/" + path.replace(/^\/Carrier\/?/, "") + location.search + location.hash);
+  }
+</script>
+</head>
+<body><p>Not found. Chatpane lives at <a href="https://chatpane.app/">chatpane.app</a>.</p></body>
+</html>
